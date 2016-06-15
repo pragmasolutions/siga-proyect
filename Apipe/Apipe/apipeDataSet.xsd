@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="apipeDataSet" targetNamespace="http://tempuri.org/apipeDataSet.xsd" xmlns:mstns="http://tempuri.org/apipeDataSet.xsd" xmlns="http://tempuri.org/apipeDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="apipeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="apipeConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Apipe.My.MySettings.GlobalReference.Default.apipeConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="atendidosPorUsuarioTableAdapter" GeneratorDataComponentClassName="atendidosPorUsuarioTableAdapter" Name="atendidosPorUsuario" UserDataComponentName="atendidosPorUsuarioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="apipeConnectionString (MySettings)" DbObjectName="``.`apipe`.`atendidosPorUsuario`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`apipe`.`atendidosPorUsuario`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DATE(fechahora)" DataSetColumn="DATE(fechahora)" />
+              <Mapping SourceColumn="COUNT(*)" DataSetColumn="COUNT(*)" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="apipeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="apipeDataSet" msprop:Generator_UserDSName="apipeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="atendidosPorUsuario" msprop:Generator_TableClassName="atendidosPorUsuarioDataTable" msprop:Generator_TableVarName="tableatendidosPorUsuario" msprop:Generator_TablePropName="atendidosPorUsuario" msprop:Generator_RowDeletingName="atendidosPorUsuarioRowDeleting" msprop:Generator_RowChangingName="atendidosPorUsuarioRowChanging" msprop:Generator_RowEvHandlerName="atendidosPorUsuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="atendidosPorUsuarioRowDeleted" msprop:Generator_UserTableName="atendidosPorUsuario" msprop:Generator_RowChangedName="atendidosPorUsuarioRowChanged" msprop:Generator_RowEvArgName="atendidosPorUsuarioRowChangeEvent" msprop:Generator_RowClassName="atendidosPorUsuarioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DATE_x0028_fechahora_x0029_" msprop:Generator_ColumnVarNameInTable="_columnDATE_fechahora_" msprop:Generator_ColumnPropNameInRow="_DATE_fechahora_" msprop:Generator_ColumnPropNameInTable="_DATE_fechahora_Column" msprop:Generator_UserColumnName="DATE(fechahora)" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="COUNT_x0028__x002A__x0029_" msprop:Generator_ColumnVarNameInTable="_columnCOUNT___" msprop:Generator_ColumnPropNameInRow="_COUNT___" msprop:Generator_ColumnPropNameInTable="_COUNT___Column" msprop:Generator_UserColumnName="COUNT(*)" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

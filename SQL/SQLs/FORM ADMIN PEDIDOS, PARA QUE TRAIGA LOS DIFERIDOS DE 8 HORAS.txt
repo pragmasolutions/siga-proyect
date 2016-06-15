@@ -1,0 +1,15 @@
+Public Shared Function FillListPendientes(ByRef _Conexion As MySqlConnection, ByVal operador_id As Integer) As List(Of pedido)
+        Using exe As New MySqlCommand
+            Dim Lista As New List(Of pedido)
+            With exe
+                .CommandText = "SELECT " & CAMPOS & " FROM pedido p" & vbCrLf
+                .CommandText &= "WHERE ISNULL(movil_id) AND((SELECT TIMEDIFF(p.fechahora_viaje,(SELECT DATE_FORMAT(NOW(),'%Y-%m-%d %H:%i:%s'))))<'08:00:00') AND (ISNULL(operador_id) OR operador_id=?operador_id) ORDER BY fechahora_viaje ASC"
+                .Parameters.AddWithValue("?operador_id", operador_id)
+                .Connection = _Conexion
+                Dim Ta As New MySqlDataAdapter(exe), Dt As New DataTable
+                Ta.Fill(Dt)
+                CargarLista(Dt, Lista)
+            End With
+            Return Lista
+        End Using
+    End Function

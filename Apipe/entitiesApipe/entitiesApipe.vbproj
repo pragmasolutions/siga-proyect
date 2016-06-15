@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{CA02F017-ACC8-4279-9EB7-EB38D5E38B1B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>entitiesApipe</RootNamespace>
+    <AssemblyName>entitiesApipe</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>entitiesApipe.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>entitiesApipe.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="modEntities">
+      <HintPath>..\Apipe\Lib\modEntities.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.8.3\lib\net40\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\ClsEnumerados.vb" />
+    <Compile Include="BL\ClsVariableSesion.vb" />
+    <Compile Include="DAL\agenda.vb" />
+    <Compile Include="DAL\aseguradora.vb" />
+    <Compile Include="DAL\barrio.vb" />
+    <Compile Include="DAL\barrio_zona.vb" />
+    <Compile Include="DAL\chofer.vb" />
+    <Compile Include="DAL\chofer_movil.vb" />
+    <Compile Include="DAL\calle.vb" />
+    <Compile Include="DAL\Extensiones\chofer_movil_ext.vb" />
+    <Compile Include="DAL\cita.vb" />
+    <Compile Include="DAL\cliente.vb" />
+    <Compile Include="DAL\cliente_categoria.vb" />
+    <Compile Include="DAL\cupon.vb" />
+    <Compile Include="DAL\domicilio.vb" />
+    <Compile Include="DAL\entidad.vb" />
+    <Compile Include="DAL\Extensiones\contador.vb" />
+    <Compile Include="DAL\Extensiones\cliente_ext.vb" />
+    <Compile Include="DAL\Extensiones\domicilioBitacora.vb" />
+    <Compile Include="DAL\Extensiones\domicilio_ext.vb" />
+    <Compile Include="DAL\Extensiones\entidad_ext.vb" />
+    <Compile Include="DAL\Extensiones\formulario_ext.vb" />
+    <Compile Include="DAL\Extensiones\frecuencia_ext.vb" />
+    <Compile Include="DAL\Extensiones\IEntidad.vb" />
+    <Compile Include="DAL\Extensiones\llamada.vb" />
+    <Compile Include="DAL\Extensiones\llamada_ext.vb" />
+    <Compile Include="DAL\Extensiones\mail_ext.vb" />
+    <Compile Include="DAL\Extensiones\movil_ext.vb" />
+    <Compile Include="DAL\Extensiones\operador_ext.vb" />
+    <Compile Include="DAL\Extensiones\Bitacora.vb" />
+    <Compile Include="DAL\Extensiones\pedidoBitacora.vb" />
+    <Compile Include="DAL\Extensiones\Operacion.vb" />
+    <Compile Include="DAL\Extensiones\reclamo_ext.vb" />
+    <Compile Include="DAL\Extensiones\reclamo_linea_ext.vb" />
+    <Compile Include="DAL\Extensiones\session_ext.vb" />
+    <Compile Include="DAL\Extensiones\telefono_domicilio_ext.vb" />
+    <Compile Include="DAL\Extensiones\telefono_ext.vb" />
+    <Compile Include="DAL\Extensiones\usuario_ext.vb" />
+    <Compile Include="DAL\Extensiones\zona_ext.vb" />
+    <Compile Include="DAL\formulario.vb" />
+    <Compile Include="DAL\formulario_rol.vb" />
+    <Compile Include="DAL\frecuencia.vb" />
+    <Compile Include="DAL\localidad.vb" />
+    <Compile Include="DAL\mail.vb" />
+    <Compile Include="DAL\movil.vb" />
+    <Compile Include="DAL\operador.vb" />
+    <Compile Include="DAL\pais.vb" />
+    <Compile Include="DAL\pedido.vb" />
+    <Compile Include="DAL\pedido_categoria.vb" />
+    <Compile Include="DAL\Extensiones\pedido_ext.vb" />
+    <Compile Include="DAL\poliza.vb" />
+    <Compile Include="DAL\provincia.vb" />
+    <Compile Include="DAL\reclamo.vb" />
+    <Compile Include="DAL\reclamo_categoria.vb" />
+    <Compile Include="DAL\reclamo_linea.vb" />
+    <Compile Include="DAL\rol.vb" />
+    <Compile Include="DAL\session.vb" />
+    <Compile Include="DAL\telefonista.vb" />
+    <Compile Include="DAL\telefono.vb" />
+    <Compile Include="DAL\telefonoExt.vb" />
+    <Compile Include="DAL\telefono_domicilio.vb" />
+    <Compile Include="DAL\usuario.vb" />
+    <Compile Include="DAL\usuario_rol.vb" />
+    <Compile Include="DAL\usuario_sucursal.vb" />
+    <Compile Include="DAL\voz.vb" />
+    <Compile Include="DAL\zona.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\entitiesApipe.Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\GenerateResource.read.1.tlog" />
+    <None Include="obj\Debug\GenerateResource.write.1.tlog" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\entitiesApipe.dll" />
+    <Content Include="bin\Debug\entitiesApipe.pdb" />
+    <Content Include="bin\Debug\entitiesApipe.xml" />
+    <Content Include="obj\Debug\entitiesApipe.dll" />
+    <Content Include="obj\Debug\entitiesApipe.pdb" />
+    <Content Include="obj\Debug\entitiesApipe.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\entitiesApipe.xml" />
+    <Content Include="obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

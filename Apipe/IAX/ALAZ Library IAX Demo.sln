@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.2.1.8805
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{A8EBF489-3D99-4CCC-B400-D45989B9BD4E}"
+	ProjectSection(SolutionItems) = postProject
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharpIAX", "SharpIAX", "{A1C69DB4-8E52-4F6B-BB2C-44FEAC561C37}"
+	ProjectSection(SolutionItems) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SharpIAX.Converted", "Demos\SharpIAX.ConvertedToVBNet\SharpIAX.Converted.vbproj", "{FADAD2F0-6001-478E-9D04-AEED07868AAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{4A84B9AD-CBA1-48F1-AC9D-AA842A933EF1}"
+	ProjectSection(SolutionItems) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MicrosoftEx.Converted", "MicrosoftEx.ConvertedToVBNet\MicrosoftEx.Converted.vbproj", "{91322FD1-0173-47EA-AC28-55AC04540AB4}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SystemEx.Converted", "SystemEx.ConvertedToVBNet\SystemEx.Converted.vbproj", "{EECF5383-F3F3-492A-AF84-02E0328FA989}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TelephonyEx.Converted", "TelephonyEx.ConvertedToVBNet\TelephonyEx.Converted.vbproj", "{8329A0CE-81FA-4F2E-9CBC-C51F6AA8FA08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FADAD2F0-6001-478E-9D04-AEED07868AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FADAD2F0-6001-478E-9D04-AEED07868AAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FADAD2F0-6001-478E-9D04-AEED07868AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FADAD2F0-6001-478E-9D04-AEED07868AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91322FD1-0173-47EA-AC28-55AC04540AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91322FD1-0173-47EA-AC28-55AC04540AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91322FD1-0173-47EA-AC28-55AC04540AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91322FD1-0173-47EA-AC28-55AC04540AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EECF5383-F3F3-492A-AF84-02E0328FA989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EECF5383-F3F3-492A-AF84-02E0328FA989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EECF5383-F3F3-492A-AF84-02E0328FA989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EECF5383-F3F3-492A-AF84-02E0328FA989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8329A0CE-81FA-4F2E-9CBC-C51F6AA8FA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8329A0CE-81FA-4F2E-9CBC-C51F6AA8FA08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8329A0CE-81FA-4F2E-9CBC-C51F6AA8FA08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8329A0CE-81FA-4F2E-9CBC-C51F6AA8FA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A1C69DB4-8E52-4F6B-BB2C-44FEAC561C37} = {A8EBF489-3D99-4CCC-B400-D45989B9BD4E}
+		{FADAD2F0-6001-478E-9D04-AEED07868AAB} = {A1C69DB4-8E52-4F6B-BB2C-44FEAC561C37}
+		{91322FD1-0173-47EA-AC28-55AC04540AB4} = {4A84B9AD-CBA1-48F1-AC9D-AA842A933EF1}
+		{EECF5383-F3F3-492A-AF84-02E0328FA989} = {4A84B9AD-CBA1-48F1-AC9D-AA842A933EF1}
+		{8329A0CE-81FA-4F2E-9CBC-C51F6AA8FA08} = {4A84B9AD-CBA1-48F1-AC9D-AA842A933EF1}
+	EndGlobalSection
+EndGlobal

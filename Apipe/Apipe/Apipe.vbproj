@@ -1,0 +1,785 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{1A0B430B-3DE7-4BA6-A8D6-7F142FC76539}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Apipe</RootNamespace>
+    <AssemblyName>Apipe</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://mara.avnam.net/sigaremoto/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://www.remisesapipe.com.ar/sigaremoto/</InstallUrl>
+    <UpdateUrl>http://www.remisesapipe.com.ar/sigaremoto/</UpdateUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>337</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Apipe.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>Full</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Apipe.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Apipe.My.MyApplication</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Apipe icono.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>25540073F9AFDF91B47B9E516DFB128F53A00BFD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Apipe_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ALAZ.MicrosoftEx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\IAX\Demos\SharpIAX.ConvertedToVBNet\bin\Debug\ALAZ.MicrosoftEx.dll</HintPath>
+    </Reference>
+    <Reference Include="ALAZ.SystemEx, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\IAX\Demos\SharpIAX.ConvertedToVBNet\bin\Debug\ALAZ.SystemEx.dll</HintPath>
+    </Reference>
+    <Reference Include="ALAZ.TelephonyEx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\IAX\Demos\SharpIAX.ConvertedToVBNet\bin\Debug\ALAZ.TelephonyEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI">
+      <HintPath>..\packages\TelerikWinCompositeUI.2012.1.321.20\lib\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms">
+      <HintPath>..\packages\TelerikWinCompositeUI.2012.1.321.20\lib\Microsoft.Practices.CompositeUI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\packages\TelerikWinCompositeUI.2012.1.321.20\lib\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="modFunciones, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\modFunciones.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.8.3\lib\net40\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Telerik.WinControls, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\RadControls for WinForms Q2 2012 SP2\Bin40\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\RadControls for WinForms Q2 2012 SP2\Bin40\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="entitiesApipe" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\ClsAdministrarPedidos.vb" />
+    <Compile Include="BL\clsBitacora.vb" />
+    <Compile Include="BL\ClsCliente.vb" />
+    <Compile Include="BL\ClsDespachador.vb" />
+    <Compile Include="BL\ClsEntidades.vb" />
+    <Compile Include="BL\ClsMain.vb" />
+    <Compile Include="BL\ClsMovil.vb" />
+    <Compile Include="BL\ClsPermisos.vb" />
+    <Compile Include="BL\ClsSettings.vb" />
+    <Compile Include="BL\ClsStores.vb" />
+    <Compile Include="BL\ClsVarios.vb" />
+    <Compile Include="BL\ClsZonas.vb" />
+    <Compile Include="PL\FormPanelContTelefonistas.Designer.vb">
+      <DependentUpon>FormPanelContTelefonistas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FormPanelContTelefonistas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FormPanelCont.Designer.vb">
+      <DependentUpon>FormPanelCont.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FormPanelCont.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PantallaTelefonista.Designer.vb">
+      <DependentUpon>PantallaTelefonista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaTelefonista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmBuscadorPedidos.Designer.vb">
+      <DependentUpon>FrmBuscadorPedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmBuscadorPedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmFrecuencias.Designer.vb">
+      <DependentUpon>FrmFrecuencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmFrecuencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmOkCancel.Designer.vb">
+      <DependentUpon>FrmOkCancel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmOkCancel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmOperadores2.Designer.vb">
+      <DependentUpon>FrmOperadores2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmOperadores2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmClienteDom.Designer.vb">
+      <DependentUpon>FrmClienteDom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmClienteDom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmSeleccionarZonaBtns.Designer.vb">
+      <DependentUpon>FrmSeleccionarZonaBtns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmSeleccionarZonaBtns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmMensajes.Designer.vb">
+      <DependentUpon>FrmMensajes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmMensajes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\DlgEntidad.Designer.vb">
+      <DependentUpon>DlgEntidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\DlgEntidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmBuscarClientes.Designer.vb">
+      <DependentUpon>FrmBuscarClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmBuscarClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmBuscarMovil.Designer.vb">
+      <DependentUpon>FrmBuscarMovil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmBuscarMovil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmChoferMovil.Designer.vb">
+      <DependentUpon>FrmChoferMovil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmChoferMovil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmConfig.designer.vb">
+      <DependentUpon>frmConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmConfiguracion.designer.vb">
+      <DependentUpon>FrmConfiguracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmConfiguracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmEntidad.Designer.vb">
+      <DependentUpon>FrmEntidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmEntidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmMail.Designer.vb">
+      <DependentUpon>FrmMail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmMail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmMensajero.Designer.vb">
+      <DependentUpon>FrmMensajero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmMensajero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmMovil.Designer.vb">
+      <DependentUpon>FrmMovil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmMovil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmReclamoCategoria.Designer.vb">
+      <DependentUpon>FrmReclamoCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmReclamoCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmCliente.Designer.vb">
+      <DependentUpon>FrmCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmConfirmacion.Designer.vb">
+      <DependentUpon>FrmConfirmacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmConfirmacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmDomicilio.Designer.vb">
+      <DependentUpon>FrmDomicilio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmDomicilio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmBarrio.Designer.vb">
+      <DependentUpon>FrmBarrio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmBarrio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmInfoCliente.Designer.vb">
+      <DependentUpon>FrmInfoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmInfoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmPedidoCategoria.Designer.vb">
+      <DependentUpon>FrmPedidoCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmPedidoCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmReclamos.Designer.vb">
+      <DependentUpon>FrmReclamos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmReclamos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmReclamosCliente.Designer.vb">
+      <DependentUpon>FrmReclamosCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmReclamosCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmSeleccionarZona.Designer.vb">
+      <DependentUpon>FrmSeleccionarZona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmSeleccionarZona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmTelefono.Designer.vb">
+      <DependentUpon>FrmTelefono.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmTelefono.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmTraspasoPedidos.Designer.vb">
+      <DependentUpon>FrmTraspasoPedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmTraspasoPedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmUsuario.Designer.vb">
+      <DependentUpon>FrmUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\MDIOperador.Designer.vb">
+      <DependentUpon>MDIOperador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\MDIOperador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\MDIPrincipal.Designer.vb">
+      <DependentUpon>MDIPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\MDIPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\MDITelefonista.Designer.vb">
+      <DependentUpon>MDITelefonista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\MDITelefonista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\modPermisos\FrmAdmForms.Designer.vb">
+      <DependentUpon>FrmAdmForms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\modPermisos\FrmAdmForms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\modPermisos\FrmCambiarClave.Designer.vb">
+      <DependentUpon>FrmCambiarClave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\modPermisos\FrmCambiarClave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\modPermisos\FrmErrorPermisos.Designer.vb">
+      <DependentUpon>FrmErrorPermisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\modPermisos\FrmErrorPermisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\modPermisos\FrmPermisos.designer.vb">
+      <DependentUpon>FrmPermisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\modPermisos\FrmPermisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Remoto\FrmCorrecionCalles.Designer.vb">
+      <DependentUpon>FrmCorrecionCalles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Remoto\FrmCorrecionCalles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PL\FormPanelContTelefonistas.resx">
+      <DependentUpon>FormPanelContTelefonistas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FormPanelCont.resx">
+      <DependentUpon>FormPanelCont.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaTelefonista.resx">
+      <DependentUpon>PantallaTelefonista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmBuscadorPedidos.resx">
+      <DependentUpon>FrmBuscadorPedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmFrecuencias.resx">
+      <DependentUpon>FrmFrecuencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmOkCancel.resx">
+      <DependentUpon>FrmOkCancel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmOperadores2.resx">
+      <DependentUpon>FrmOperadores2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmClienteDom.resx">
+      <DependentUpon>FrmClienteDom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmSeleccionarZonaBtns.resx">
+      <DependentUpon>FrmSeleccionarZonaBtns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmMensajes.resx">
+      <DependentUpon>FrmMensajes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\DlgEntidad.resx">
+      <DependentUpon>DlgEntidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmBuscarClientes.resx">
+      <DependentUpon>FrmBuscarClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmBuscarMovil.resx">
+      <DependentUpon>FrmBuscarMovil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmChoferMovil.resx">
+      <DependentUpon>FrmChoferMovil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmConfig.resx">
+      <DependentUpon>frmConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmConfiguracion.resx">
+      <DependentUpon>FrmConfiguracion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmEntidad.resx">
+      <DependentUpon>FrmEntidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmMail.resx">
+      <DependentUpon>FrmMail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmMensajero.resx">
+      <DependentUpon>FrmMensajero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmMovil.resx">
+      <DependentUpon>FrmMovil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmReclamoCategoria.resx">
+      <DependentUpon>FrmReclamoCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmBarrio.resx">
+      <DependentUpon>FrmBarrio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmCliente.resx">
+      <DependentUpon>FrmCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmConfirmacion.resx">
+      <DependentUpon>FrmConfirmacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmDomicilio.resx">
+      <DependentUpon>FrmDomicilio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmInfoCliente.resx">
+      <DependentUpon>FrmInfoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmPedidoCategoria.resx">
+      <DependentUpon>FrmPedidoCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmReclamos.resx">
+      <DependentUpon>FrmReclamos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmReclamosCliente.resx">
+      <DependentUpon>FrmReclamosCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmSeleccionarZona.resx">
+      <DependentUpon>FrmSeleccionarZona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmTelefono.resx">
+      <DependentUpon>FrmTelefono.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmTraspasoPedidos.resx">
+      <DependentUpon>FrmTraspasoPedidos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmUsuario.resx">
+      <DependentUpon>FrmUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\MDIOperador.resx">
+      <DependentUpon>MDIOperador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\MDIPrincipal.resx">
+      <DependentUpon>MDIPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\MDITelefonista.resx">
+      <DependentUpon>MDITelefonista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\modPermisos\FrmAdmForms.resx">
+      <DependentUpon>FrmAdmForms.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\modPermisos\FrmCambiarClave.resx">
+      <DependentUpon>FrmCambiarClave.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\modPermisos\FrmErrorPermisos.resx">
+      <DependentUpon>FrmErrorPermisos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\modPermisos\FrmPermisos.resx">
+      <DependentUpon>FrmPermisos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Remoto\FrmCorrecionCalles.resx">
+      <DependentUpon>FrmCorrecionCalles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="apipeDataSet.xsc">
+      <DependentUpon>apipeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="apipeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="apipeDataSet.xss">
+      <DependentUpon>apipeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="apipeDataSetConexion.xsc">
+      <DependentUpon>apipeDataSetConexion.xsd</DependentUpon>
+    </None>
+    <None Include="apipeDataSetConexion.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="apipeDataSetConexion.xss">
+      <DependentUpon>apipeDataSetConexion.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\entitiesApipe\entitiesApipe.vbproj">
+      <Project>{CA02F017-ACC8-4279-9EB7-EB38D5E38B1B}</Project>
+      <Name>entitiesApipe</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Apipe icono.ico" />
+    <Content Include="Lib\ALAZ.MicrosoftEx.dll" />
+    <Content Include="Lib\ALAZ.SystemEx.dll" />
+    <Content Include="Lib\ALAZ.TelephonyEx.dll" />
+    <Content Include="Lib\iaxclient.dll" />
+    <Content Include="Lib\modEntities.dll" />
+    <Content Include="Lib\modFunciones.dll" />
+    <Content Include="Lib\modPermisos.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Properties\Resources.Designer.cs" />
+    <Content Include="Properties\Settings.Designer.cs" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\transferir.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\house.png" />
+    <None Include="Resources\background apipe.jpg" />
+    <None Include="Resources\background apipe2.jpg" />
+    <None Include="Resources\base.png" />
+    <None Include="Resources\left.png" />
+    <None Include="Resources\agregar_movil.png" />
+    <Content Include="Resources\cliente.png" />
+    <Content Include="Resources\llamada.png" />
+    <Content Include="Resources\login apipe.png" />
+    <None Include="Resources\page edit.png" />
+    <None Include="Resources\quitar_movil.png" />
+    <None Include="Resources\mensajeria.jpg" />
+    <Content Include="Resources\manoab.png" />
+    <Content Include="Resources\reclamo2.png" />
+    <None Include="Resources\reclamo3.png" />
+    <None Include="Resources\reclamo4.png" />
+    <None Include="Resources\signoreclamo.png" />
+    <None Include="Resources\right.png" />
+    <Content Include="Resources\splash apipe.png" />
+    <None Include="Resources\telemarket.png" />
+    <None Include="Resources\telemarket-32x32.png" />
+    <None Include="Resources\reclamo.png" />
+    <None Include="Resources\vacio.png" />
+    <None Include="Resources\Aire.bmp" />
+    <None Include="Resources\aire.png" />
+    <None Include="Resources\baul.png" />
+    <None Include="Resources\add1.png" />
+    <None Include="Resources\borrar.png" />
+    <None Include="Resources\buscar.png" />
+    <None Include="Resources\cerrar.png" />
+    <Content Include="Resources\disk.png" />
+    <None Include="Resources\disk1.png" />
+    <None Include="Resources\modif.png" />
+    <Content Include="Resources\modif1.png" />
+    <None Include="Resources\notiene.png" />
+    <Content Include="Resources\page_edit.png" />
+    <Content Include="Resources\persona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Telerik.WinControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.Scheduler">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.Themes.Office2007Black">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.Themes.Office2010Black">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="TelerikCommon">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Informes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

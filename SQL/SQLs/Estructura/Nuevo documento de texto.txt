@@ -1,0 +1,4 @@
+01 - Primer version
+02 - Version apipe
+03 - Estructura sin UNSIGNED, bitacoras con relaciones
+04 - BD actualizada con relevamiento de sistema MOVILES

@@ -1,0 +1,1 @@
+INSERT INTO pedido_categoria (nombre) VALUES ('Pedido CQV')

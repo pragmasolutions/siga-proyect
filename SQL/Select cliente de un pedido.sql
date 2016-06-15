@@ -1,0 +1,1 @@
+SELECT p.cliente, p.fechahora, d.calle,p.operador_id FROM pedido p, domicilio d WHERE DATE(p.fechahora) = DATE(NOW()) AND p.domicilio_id=d.id AND d.numero = 1399
